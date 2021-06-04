@@ -13,7 +13,7 @@
 + Socket.io is used as middleware for real-time full-duplex communication between client and server.
 
 ## How to use it
-+ YupChat has been already deployed on the vercel app, you can click (here)[http://yupchat.vercel.app/] to use it.
++ YupChat has been already deployed on the vercel app, you can click [here](http://yupchat.vercel.app) to use it.
 + Enter your name.
 + If you want to create a new room then enter a room name of your choice and share it with your friends so they can join in.
 + Or if someone has already created the Room, then you can ask for the room name and join them instantly.
