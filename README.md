@@ -1,4 +1,4 @@
-# yupchat
+# Yup Chat
 
 + An Interactive user friendly web application buit using `React`, `Node`, `Express` and `Socket.io`.
 
