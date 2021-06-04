@@ -1,7 +1,6 @@
 const express = require('express');
-
 const http = require('http');
-
+const cors = require('cors');
 const {addUser, removeUser, getUser, getUsersInRoom} = require('./users');
 const PORT = process.env.PORT || 5000;
 
@@ -9,13 +8,14 @@ const router = require('./router.js')
 
 const app = express();
 const server = http.createServer(app);
-const io = require('socket.io')(server, {
-    cors: {
-      origin: `http://localhost:${PORT}`,
-      methods: ["GET", "POST"],
-      credentials: true
-    }
-  });
+const io = require('socket.io')(server)
+// , {
+//     cors: {
+//       origin: `http://localhost:${PORT}`,
+//       methods: ["GET", "POST"],
+//       credentials: true
+//     }
+//   });
 
 io.on('connection', (socket) => {
     console.log("We got new connection");
@@ -54,6 +54,7 @@ io.on('connection', (socket) => {
 })
 
 app.use(router);
+app.use(cors());
 
 server.listen(PORT, () => {
     console.log(`server has started on port ${PORT}`);
