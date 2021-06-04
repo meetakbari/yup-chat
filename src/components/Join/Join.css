@@ -1,0 +1,82 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #1A1A1D;
+  }
+  
+  .joinInnerContainer {
+    width: 300px;
+  }
+  
+  .joinInput {
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 100%;
+    margin: 5px auto;
+    border: 2px solid black;
+  }
+  
+  .heading {
+    color: #ffc300;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  
+  .btn {
+      color: black !important;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bolder;
+      background: #ffc300;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 224px) and (max-width: 480px) {
+    .joinInnerContainer {
+      width: 270px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .joinInnerContainer {
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .joinInnerContainer {
+      width: 350px;
+    }
+  }
+  
+/* to remove outline from all the focused elements */
+*:focus {
+    outline: 0 !important;
+}
