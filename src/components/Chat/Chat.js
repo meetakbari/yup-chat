@@ -15,12 +15,12 @@ const Chat = ({ location }) => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
 
-    const ENDPOINT = 'http://localhost:5000';
+    const ENDPOINT = 'https://yupchat.herokuapp.com/';
 
     useEffect(() => {
         const {name, room} = queryString.parse(location.search);
 
-        socket = io(ENDPOINT, {transports: ['websocket']});
+        socket = io(ENDPOINT, {"force new connections" : true, "reconnectAttempts" : "Infinity",  "timeout" : 10000, transports: ['websocket']});
         setName(name);
         setRoom(room);
         
