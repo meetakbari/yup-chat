@@ -4,8 +4,9 @@
 
 ## Salient Features
 + Create a room and chat with your friends.
-+ Join multiple rooms at a time
++ Join multiple rooms at a time.
 + Send Emojis in the message.
++ Scroll down button for recent messages.
 
 ## Things to understand before starting development in your local machine
 + Frontend is designed using react.js and is available in the **client** directory.
