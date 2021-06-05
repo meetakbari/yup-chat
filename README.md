@@ -1,6 +1,7 @@
-# yupchat
+## Yup Chat
 
-+ We are using socket.io (which uses websockets) for real time chatting.
+Please go to main branch for complete documentation of the app.
 
-+ We had used http requests to chat and send message in real time, but due to its higher processing and transmission time compared to websockets we will be using socket.io here.
-
+### NOTE
++ `client-dev` branch contains the code of client side.
++ `server-dev` branch contains the code of server side.
