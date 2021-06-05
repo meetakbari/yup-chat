@@ -9,8 +9,8 @@
 + Scroll down button for recent messages.
 
 ## Things to understand before starting development in your local machine
-+ Frontend is designed using react.js and is available in the **client** directory.
-+ Backend is developed using node.js & express and is available in the **server** directory.
++ Frontend is designed using react.js and is available in the `client-dev` branch.
++ Backend is developed using node.js & express and is available in the `server-dev` branch.
 + Socket.io is used as middleware for real-time full-duplex communication between client and server.
 
 ## How to use it
